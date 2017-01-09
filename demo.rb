@@ -1,0 +1,6 @@
+puts "Hola mundo"
+nombre = "Martin"
+apellido = "Ramirez"
+ciudad = "Mexico"
+delegacion = "Azcapozalco"
+puts "#{nombre} #{apellido}, #{ciudad}, #{delegacion}" 
