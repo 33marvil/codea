@@ -6,3 +6,4 @@ resta_dos == 0
 #=>error
 
 #no es posible comparar string con integer
+  
