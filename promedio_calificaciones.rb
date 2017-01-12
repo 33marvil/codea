@@ -2,7 +2,8 @@ def average(calificaciones) #definicion de metodo
   sum = 0 #definir variable que se llamara despues
   calificaciones.each do |calificacion| #recorer el array y obtner cada una de la calificaciones
     sum = sum + calificacion#llamar variable, meter sumar cada uno de los valores calificacion    
-  end#
+  end
+  #variable a flotante
   sum.to_f / calificaciones.length #variable .to_f optener el promedio entre todo el array 
 end
 # Pruebas
