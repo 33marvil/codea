@@ -21,5 +21,6 @@ canasta_de_frutas = {
 
 canasta_de_frutas["naranja"] = 9
 
-canasta_de_frutas["kiwi"]
-canasta_de_frutas["fruta_selecionada"] = 32
+fruta_seleccionada = canasta_de_frutas["kiwi"]
+p fruta_seleccionada
+p canasta_de_frutas
