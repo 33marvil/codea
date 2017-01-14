@@ -1,0 +1,72 @@
+#comando para dar formato a los headers 
+cat << EOF > ~/.sqliterc
+.headers on
+.mode column
+EOF
+
+#Comando para correr el archivo
+sqlite3 ejemplo.db
+
+
+-- Loading resources from /Users/codea_mac_10/.sqliterc
+
+SQLite version 3.8.5 2014-08-15 22:37:57
+Enter ".help" for usage hints.
+
+#Comandos para crear una tabla
+sqlite> CREATE TABLE usuarios (
+   ...>   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   ...>   nombre VARCHAR(64) NOT NULL,
+   ...>   apellido  VARCHAR(64) NOT NULL,
+   ...>   email VARCHAR(128) UNIQUE NOT NULL,
+   ...>   fecha_nacimiento DATETIME NOT NULL,
+   ...>   genero VARCHAR(10) NOT NULL
+   ...> );
+
+#Comando para insertar informacion a una tabla
+sqlite> INSERT INTO usuarios
+   ...>  (nombre, apellido, email, fecha_nacimiento, genero)
+   ...>  VALUES
+   ...>  ('Carlos', 'Ribero', 'carlos@yahoo.com', '1970-11-03', 'masculino');
+sqlite> 
+
+#Comando para ver la tabla 
+sqlite> SELECT * FROM usuarios;
+id          nombre      apellido    email             fecha_nacimiento  genero    
+----------  ----------  ----------  ----------------  ----------------  ----------
+1           Carlos      Ribero      carlos@yahoo.com  1970-11-03        masculino 
+
+#Comando para agregar una nueva columna 
+sqlite> ALTER TABLE usuarios ADD COLUMN apodo;
+
+
+#Comando para modificar o actualizar un dato en una columna
+sqlite> UPDATE usuarios 
+   ...> SET apodo = 'Charly'
+   ...> WHERE id = 1;
+
+sqlite> SELECT * FROM usuarios;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Ribero      carlos@yahoo.com  1970-11-03        masculino   Charly    
+
+#El comando schema muestra el schema de la tabla
+sqlite> .schema
+CREATE TABLE usuarios (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre VARCHAR(64) NOT NULL,
+  apellido  VARCHAR(64) NOT NULL,
+  email VARCHAR(128) UNIQUE NOT NULL,
+  fecha_nacimiento DATETIME NOT NULL,
+  genero VARCHAR(10) NOT NULL
+, apodo);
+
+
+
+
+
+
+
+
+
+
