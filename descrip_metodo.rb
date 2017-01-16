@@ -10,14 +10,14 @@ def hello
  # Metodo con un argumento
 def hello1(nombre)
   puts 'Hola' + nombre
-  return 'correcto'
+  puts 'correcto'
 end
-puts (hello1('Pedro'))
+puts (hello1(' Pedro'))
 
 # Método con argumento (sin paréntesis)
 def hello2 nombre2
   puts 'Hola ' + nombre2
-  return 'correcto'  
+  puts 'correcto'  
 end
 puts (hello2 'Juan' )
 
