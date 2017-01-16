@@ -1,8 +1,5 @@
 def age(num)
-  if num >= 10
-    "Woow... You are #{num} years old"
-  end
-
+  "Woow... You are #{num} years old" if num > 10 
 end
 
 #test
