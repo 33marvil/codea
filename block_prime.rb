@@ -1,7 +1,8 @@
 require 'prime'
-def prime
+def prime  
+  puts "Block de numeros primos"
    yield 
 end
-value = prime {Prime.first 10}
+block = prime {Prime.first 10}
 
-p value == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+p block == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
