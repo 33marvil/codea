@@ -1,16 +1,25 @@
-class Cat
+"welcome".class
+#=>String
+
+"coders".class
+#=>String
+#*******************************************************************************
+class RaceCar
+end
+#*******************************************************************************
+# class Cat
   
-end
+# end
 
-class Dug
+# class Dug
 
-end
+# end
 
-class Dog
-end
+# class Dog
+# end
 
-class Dolphin
-end
+# class Dolphin
+# end
 #*******************************************************************************
 # class Cat
 #   # def initialize(name) """"puedo omitri en este momento""""       
