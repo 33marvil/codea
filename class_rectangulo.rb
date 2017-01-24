@@ -7,22 +7,22 @@ class Rectangle
   end
 
   def area #base * altura
-    area = @width * @height    
+    area = width * height    
   end
 
   def perimeter # base + altura * 2
-    perimeter = 2 * (@width + @height)       
+    perimeter = 2 * (width + height)       
   end
 =begin 
 #metodo Math.sqrt para raíz cuadrada ** de la suma de 
 ((@width al cuadrado ** 2) + (@heigth al cuadrado ** 2))
 =end
   def diagonal 
-    diagonal = Math.sqrt((@width ** 2) + (@height ** 2))
+    diagonal = Math.sqrt((width ** 2) + (height ** 2))
   end
 
   def square? #metodo para saber si sus lados son iguales
-    square = @width == @height
+    square = width == height
   end
 end
 
