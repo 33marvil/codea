@@ -7,10 +7,18 @@ end
 
 class Man < People
   attr_reader :color
+
   def initialize(color)
-    super
+    super 
+=begin 
+super puede llamar a los atributos del metodo padre
+"condicion es que tiene que tener el mismo nombre metodo padre y metodo hijo"
+de esta forma podemos combimar los atributos 
+de metodo padre o base con el metodo hijo o subclass
+=end
     @color = color
   end  
+
 end
 
 class Woman < People
